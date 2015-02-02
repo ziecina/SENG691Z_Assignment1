@@ -78,14 +78,52 @@ Assignment 1
 </table>
 
 
-<h2>Task 3: </h2>
+<h2>Task 3: Collate Items by Time</h2>
 <table border="1">
 	<thead>
 		<tr><td>Input</td><td>Expected Output</td><td>Result</td></tr>
 	</thead>
 	<tbody>
-		<tr><td>displayBoard()</td><td></td><td><script>displayBoard();</script></td></tr>
+		<tr><td>
+			<pre>
+2/1/15, 2:12:00 PM
+2/1/15, 2:15:00 PM
+2/1/15, 2:15:00 PM
+2/1/15, 2:15:00 PM
+2/1/15, 2:15:00 PM
+2/1/15, 2:19:00 PM
+2/1/15, 2:19:00 PM
+			</pre>		
+		</td>
+		<td>
+			<pre>
+2/1/15, 2:12:00 PM
+2/1/15, 2:15:00 PM
+2/1/15, 2:19:00 PM
+			</pre>
+		</td>
+		<td><script>collateTimes();</script></td></tr>
 
+		<tr><td>
+			<pre>
+2/1/15, 2:30:00 PM
+2/1/15, 2:30:00 PM
+2/1/15, 2:32:00 PM
+2/1/15, 2:32:00 PM
+2/1/15, 2:32:00 PM
+2/1/15, 2:37:00 PM
+2/1/15, 2:37:00 PM
+			</pre>		
+		</td>
+		<td>
+			<pre>
+2/1/15, 2:30:00 PM
+2/1/15, 2:32:00 PM
+2/1/15, 2:37:00 PM
+			</pre>
+		</td>
+		<td><script>collateTimes();</script></td></tr>
+		
 	</tbody>
 </table>
 
