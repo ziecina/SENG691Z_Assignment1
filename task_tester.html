@@ -13,6 +13,7 @@ Assignment 1
  	
 	<script src="task1.js" type="text/javascript"></script>
 	<script src="task2.js" type="text/javascript"></script>
+	<script src="task3.js" type="text/javascript"></script>
 </head>
 <body>
 <h2>Task 1: Fibonacci Series</h2>
@@ -85,65 +86,73 @@ Assignment 1
 	</thead>
 	<tbody>
 		<tr>
-			<td>2/1/15, 2:12:03 PM<td>
+			<td>2/1/2015, 2:12:03 PM</td>
 			<td>Sun Feb 1 2015</td>
-			<td><script>Date.parse("2/1/15, 2:12:03 PM").toDateString();</script></td>
+			<td><script>var d = new Date(Date.parse("2/1/2015, 2:12:03 PM"));
+						document.write(d.toLocaleString());</script></td>
+		</tr>
+		<tr>
+			<td>2/1/2015, 2:12:03 PM</td>
+			<td>Sun Feb 1 2015</td>
+			<td><script>var d = new Date(Date.parse("2/1/2015, 2:12:03 PM"));
+						d.setMinutes(d.getMinutes() + 1);
+						document.write(d.toLocaleString());</script></td>
 		</tr>
 		<tr><td>
 			<pre>
-2/1/15, 2:12:03 PM
-2/1/15, 2:15:18 PM
-2/1/15, 2:15:25 PM
-2/1/15, 2:15:45 PM
-2/1/15, 2:15:55 PM
-2/1/15, 2:19:35 PM
-2/1/15, 2:19:45 PM
+2/1/2015, 2:12:03 PM
+2/1/2015, 2:15:18 PM
+2/1/2015, 2:15:25 PM
+2/1/2015, 2:15:45 PM
+2/1/2015, 2:15:55 PM
+2/1/2015, 2:19:35 PM
+2/1/2015, 2:19:45 PM
 			</pre>		
 		</td>
 		<td>
 			<pre>
-2/1/15, 2:12:03 PM
-2/1/15, 2:15:18 PM
-2/1/15, 2:19:35 PM
+2/1/2015, 2:12:03 PM
+2/1/2015, 2:15:18 PM
+2/1/2015, 2:19:35 PM
 			</pre>
 		</td>
 		<td><script>
 		var times = [
-"2/1/15, 2:12:03 PM",
-"2/1/15, 2:15:18 PM",
-"2/1/15, 2:15:25 PM",
-"2/1/15, 2:15:45 PM",
-"2/1/15, 2:15:55 PM",
-"2/1/15, 2:19:35 PM",
-"2/1/15, 2:19:45 PM"
+"2/1/2015, 2:12:03 PM",
+"2/1/2015, 2:15:18 PM",
+"2/1/2015, 2:15:25 PM",
+"2/1/2015, 2:15:45 PM",
+"2/1/2015, 2:15:55 PM",
+"2/1/2015, 2:19:35 PM",
+"2/1/2015, 2:19:45 PM"
 		];
 		collateTimes(times);</script></td></tr>
 		<tr><td>
 			<pre>
-2/1/15, 2:30:25 PM
-2/1/15, 2:30:59 PM
-2/1/15, 2:31:32 PM
-2/1/15, 2:32:01 PM
-2/1/15, 2:32:45 PM
-2/1/15, 2:37:25 PM
-2/1/15, 2:37:35 PM
+2/1/2015, 2:30:25 PM
+2/1/2015, 2:30:59 PM
+2/1/2015, 2:31:32 PM
+2/1/2015, 2:32:01 PM
+2/1/2015, 2:32:45 PM
+2/1/2015, 2:37:25 PM
+2/1/2015, 2:37:35 PM
 			</pre>		
 		</td>
 		<td>
 			<pre>
-2/1/15, 2:30:25 PM
-2/1/15, 2:37:25 PM
+2/1/2015, 2:30:25 PM
+2/1/2015, 2:37:25 PM
 			</pre>
 		</td>
 		<td><script>
 		var times = [
-"2/1/15, 2:30:25 PM",
-"2/1/15, 2:30:59 PM",
-"2/1/15, 2:31:32 PM",
-"2/1/15, 2:32:01 PM",
-"2/1/15, 2:32:45 PM",
-"2/1/15, 2:37:25 PM",
-"2/1/15, 2:37:35 PM"
+"2/1/2015, 2:30:25 PM",
+"2/1/2015, 2:30:59 PM",
+"2/1/2015, 2:31:32 PM",
+"2/1/2015, 2:32:01 PM",
+"2/1/2015, 2:32:45 PM",
+"2/1/2015, 2:37:25 PM",
+"2/1/2015, 2:37:35 PM"
 		];
 		collateTimes(times);</script></td></tr>
 		
